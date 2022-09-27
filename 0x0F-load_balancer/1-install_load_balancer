@@ -17,7 +17,7 @@ echo "
    option httpclose
    option forwardfor
    server 22825-web-01 3.215.182.28:80 check
-   server 22825-web-01 3.239.5.9:80 check
+   server 22825-web-02 3.239.5.9:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy start
