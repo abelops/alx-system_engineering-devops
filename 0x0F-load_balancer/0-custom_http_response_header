@@ -1,4 +1,5 @@
+
 #!/usr/bin/env bash
 # Configure new nginx server to have a custom header
-sed -i '51i\add_header X-Served-By $HOSTNAME;' /etc/nginx/sites-available/default
+sed -i '56i\\t\tadd_header X-Served-By 22825-web-01;' /etc/nginx/sites-available/default
 service nginx restart
